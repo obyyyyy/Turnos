@@ -1,0 +1,28 @@
+@*Código Razor*@
+@model IEnumerable<Turnos.Models.Especialidad>
+@{
+    ViewData ["Title"] = "Especialidades";
+}
+
+<h2>Especialidades</h2>
+
+<Table class="table table_striped">
+
+</Table>
+
+<thead>
+    <th>
+        @Html.DisplayNameFor(item => item.Descripcion)
+    </th>
+</thead>
+
+<tbody>
+    @foreach(var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelitem => item.Descripcion)
+            </td>
+        </tr>
+    }
+</tbody>
